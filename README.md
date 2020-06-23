@@ -19,23 +19,29 @@ Note that the basic Caesar shift cipher (with arbitrary shift, so for instance R
 The cipher takes as input the plain text (lowercase, unspaced/"Patristocrat" plain texts are explicitely supported by means of Data.Ord, other inputs used at own risk) and an integer encryption key that denotes the "offset" or "shift." For instance, a key of 3 is the classic Caesar shift cipher, A -> D, B -> E, etc. 
 
 #### Command Line Interface
-   $ ./Crypto
-   >>> "Provide encryption method (string):"
-   >>> Caesar
-   >>> "Provide the plain text (string):"
-   >>> attackatdawn
-   >>> "Provide the encryption key (integer):"
-   >>> 3
-   >>> "Cipher text: dwwdfndwgdzq"
+```
+$ ./Crypto
+>>> "Provide encryption method (string):"
+>>> Caesar
+>>> "Provide the plain text (string):"
+>>> attackatdawn
+>>> "Provide the encryption key (integer):"
+>>> 3
+>>> "Cipher text: dwwdfndwgdzq"
+```
 
 #### From a configuration file
 A configuration file containing the arguments can be piped in through cat (or some other appropriate command line function). For instance, if Config.txt is:
-   Caesar
-   abcdefghijklmnopqrstuvwxyz
-   3
+```
+Caesar
+abcdefghijklmnopqrstuvwxyz
+3
+```
 Then the following output is produced
-   $ cat Config.txt | ./Crypto
-   "Provide encryption method (string):"
-   "Provide the plain text (string):"
-   "Provide the encryption key (integer):"
-   "Cipher text: defghijklmnopqrstuvwxyzabc"
+```
+$ cat Config.txt | ./Crypto
+"Provide encryption method (string):"
+"Provide the plain text (string):"
+"Provide the encryption key (integer):"
+"Cipher text: defghijklmnopqrstuvwxyzabc"
+```
