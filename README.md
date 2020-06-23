@@ -1,5 +1,5 @@
 # Cryptography
-A project for cryptography, and making/solving cryptographic puzzles more specifically. 
+A project for making/solving cryptographic puzzles. 
 
 ## About
 ### Description
