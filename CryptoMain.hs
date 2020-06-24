@@ -2,26 +2,25 @@
 Author: Adam Diehl
 Date-Created: 2020-06-19
 Date-Revised: 2020-06-22
-Version: 0.2
+Version: 0.3
 Description: Main file to join the methods of the crypto library.
 Compilation: ghc -o Crypto CryptoMain.hs -O2
 
 Version notes
+- Version 0.3: Moved empty route to EncryptionRouter.
 - Version 0.2: Created router to map encryption method
 - Version 0.1: Minimally viable product, interactive CLI base
+
+---> Note about versioning: version numbers for other .hs files denote the
+  version of *that file* and not of the project. Project versioning is linked to
+  Mainfile versioning (this file). <---
 -}
 
 -- Imports
 import System.Environment
 import EncryptionRouter
 
-{- Set routings -}
--- Set default method
-argParseEmpty :: IO()
-argParseEmpty = do
-  print("No valid encryption method specified")
-
--- Set routes
+-- Set routing
 routeEncryption method
     | method == "Caesar" = argParseCaesar
     | otherwise = argParseEmpty
@@ -35,4 +34,3 @@ main = do
 
   -- Pass to router
   routeEncryption method
-  
