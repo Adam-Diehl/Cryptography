@@ -7,7 +7,7 @@ Description: Main file to join the methods of the crypto library.
 Compilation: ghc -o Crypto CryptoMain.hs -O2
 
 Version notes
-- Version 0.3: Moved empty route to EncryptionRouter.
+- Version 0.3: Added basic unit testing. Moved empty route to EncryptionRouter.
 - Version 0.2: Created router to map encryption method
 - Version 0.1: Minimally viable product, interactive CLI base
 
