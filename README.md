@@ -45,3 +45,16 @@ $ cat Config.txt | ./Crypto
 "Provide the encryption key (integer):"
 "Cipher text: defghijklmnopqrstuvwxyzabc"
 ```
+
+### Tests
+Tests can be run through GHCI. 
+```
+Prelude> :l TestingSuite
+[1 of 3] Compiling LibCiphers.Caesar ( LibCiphers/Caesar.hs, interpreted )
+[2 of 3] Compiling Tests.UnitTests_Ciphers ( Tests/UnitTests_Ciphers.hs, interpreted )
+[3 of 3] Compiling Main             ( TestingSuite.hs, interpreted )
+Ok, 3 modules loaded.
+*Main> runTestTT unitTests
+Cases: 2  Tried: 2  Errors: 0  Failures: 0
+Counts {cases = 2, tried = 2, errors = 0, failures = 0}
+```
