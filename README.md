@@ -6,6 +6,7 @@ A project for making/solving cryptographic puzzles.
 This is a collection of Haskell scripts designed to support hobby cryptography. (There will be little, if any, attempt to make any of the encryption or decryption routines suitable for industrial use.) The core functionality/UX is in the process of being scoped out, and support for different ciphers will expand once these decisions become stable. 
 
 ### Version
+- Version 0.3: Added basic unit tests (see **Examples** below). Moved around a few pieces of code for clarity. Cleaned some documentation. 
 - Version 0.2: Added the "encryption router" to handle different encryption methods and their various inputs. Simplified (internal) documentation for Caesar shift cypher.
 - Version 0.1: Minimally viable product, supports basic Caesar encryption in the (English) Latin alphabet through an interactive CLI.
 
@@ -44,4 +45,17 @@ $ cat Config.txt | ./Crypto
 "Provide the plain text (string):"
 "Provide the encryption key (integer):"
 "Cipher text: defghijklmnopqrstuvwxyzabc"
+```
+
+### Tests
+Tests can be run through GHCI. 
+```
+Prelude> :l TestingSuite
+[1 of 3] Compiling LibCiphers.Caesar ( LibCiphers/Caesar.hs, interpreted )
+[2 of 3] Compiling Tests.UnitTests_Ciphers ( Tests/UnitTests_Ciphers.hs, interpreted )
+[3 of 3] Compiling Main             ( TestingSuite.hs, interpreted )
+Ok, 3 modules loaded.
+*Main> runTestTT unitTests
+Cases: 2  Tried: 2  Errors: 0  Failures: 0
+Counts {cases = 2, tried = 2, errors = 0, failures = 0}
 ```

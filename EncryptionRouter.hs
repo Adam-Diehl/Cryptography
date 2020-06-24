@@ -2,19 +2,28 @@
 Author: Adam Diehl
 Date-Created: 2020-06-22
 Date-Revised: 2020-06-22
-Version: 0.1
+Version: 0.2
 Description: File contains functions to route user input to the appropriate set
-  of encryption functions
+  of encryption functions.
+
+Version notes
+- Version 0.2: Moved empty route into this file.
+- Version 0.1: Minimally viable product
 -}
 
 module EncryptionRouter where
 
-{- Global imports -}
+{- Imports -}
 import LibStrings.StringProcessing
-
-{- ROUTE: Caesar shift cipher -}
 import LibCiphers.Caesar
 
+{- Set Routes -}
+-- ROUTE: Empty/Null/Default
+argParseEmpty :: IO()
+argParseEmpty = do
+  print("No valid encryption method specified")
+
+-- ROUTE: Caesar shift cipher
 argParseCaesar :: IO()
 argParseCaesar = do
   -- Get plain text
