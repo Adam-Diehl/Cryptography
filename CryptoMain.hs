@@ -2,7 +2,7 @@
 Author: Adam Diehl
 Date-Created: 2020-06-19
 Date-Revised: 2020-06-24
-Version: 0.3
+Version: 0.4
 Description: Main file to join the methods of the crypto library.
 Compilation: ghc -o Crypto CryptoMain.hs -O2
 
