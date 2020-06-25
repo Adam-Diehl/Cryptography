@@ -1,12 +1,13 @@
 {-
 Author: Adam Diehl
 Date-Created: 2020-06-22
-Date-Revised: 2020-06-22
+Date-Revised: 2020-06-24
 Version: 0.2
 Description: File contains functions to route user input to the appropriate set
   of encryption functions.
 
 Version notes
+- Version 0.3: Added support for decryption
 - Version 0.2: Moved empty route into this file.
 - Version 0.1: Minimally viable product
 -}
