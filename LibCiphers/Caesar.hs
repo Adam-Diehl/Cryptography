@@ -1,8 +1,8 @@
 {-
 Author: Adam Diehl
 Date-Created: 2020-06-19
-Date-Revised: 2020-06-22
-Version: 0.2
+Date-Revised: 2020-06-24
+Version: 0.3
 Description: Module to handle encrypting (forward mode) and decrypting
   (reverse mode) simple Caesar ciphers.
 -}
