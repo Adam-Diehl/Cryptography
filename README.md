@@ -2,10 +2,10 @@
 A project for making/solving cryptographic puzzles. 
 
 ## About
-### Description
+### Project Description
 This is a collection of Haskell scripts designed to support hobby cryptography. (There will be little, if any, attempt to make any of the encryption or decryption routines suitable for industrial use.) The core functionality/UX is in the process of being scoped out, and support for different ciphers will expand once these decisions become stable. 
 
-### Version
+### Version Information
 - Version 0.3: Added basic unit tests (see **Examples** below). Moved around a few pieces of code for clarity. Cleaned some documentation. 
 - Version 0.2: Added the "encryption router" to handle different encryption methods and their various inputs. Simplified (internal) documentation for Caesar shift cypher.
 - Version 0.1: Minimally viable product, supports basic Caesar encryption in the (English) Latin alphabet through an interactive CLI.
