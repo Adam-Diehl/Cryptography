@@ -29,7 +29,7 @@ routeEncryption method
 main :: IO()
 main = do
   -- Get encryption method
-  print("Provide encryption method (string):")
+  putStrLn("Provide encryption method (string):")
   method <- getLine
 
   -- Pass to router
