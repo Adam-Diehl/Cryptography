@@ -17,3 +17,8 @@ caesarBase key plainText = (plainText + key) `mod` 26
 -- Encrypt wraps Base for around a list passed by LibString
 encryptCaesar :: Integer -> [Integer] -> [Integer]
 encryptCaesar key plainText = map (caesarBase key) plainText
+
+{- Reverse mode -}
+-- Get list of all 26 possible plain texts
+bruteForceDecryptCaesar :: [Integer] -> [[Integer]]
+bruteForceDecryptCaesar cipherText = map (\possibleKeys -> encryptCaesar possibleKeys cipherText) [0..25]
