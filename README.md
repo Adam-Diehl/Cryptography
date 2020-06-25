@@ -12,7 +12,7 @@ This is a collection of Haskell scripts designed to support hobby cryptography. 
 - Version 0.1: Minimally viable product, supports basic Caesar encryption in the (English) Latin alphabet through an interactive CLI.
 
 ### Installation
-Download or clone the repository and compile from source.
+Download or clone the repository and compile from source ($ ghc -o Crypto CryptoMain.hs -O2).
 
 ## Examples
 Note that the basic Caesar shift cipher (with arbitrary shift, so for instance ROT 13 is included) is the only cipher supported at this early stage of development.
