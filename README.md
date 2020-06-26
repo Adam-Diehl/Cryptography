@@ -16,7 +16,8 @@ There are two options for installation:
 - Download or clone the repository and compile from source ($ ghc -o Crypto CryptoMain.hs -O2).
 - A docker image *of the executable only* is available at https://hub.docker.com/r/adamdiehl/cryptography-v04. Note that you cannot run the tests from the docker image (to keep the image size down by not including GHCI). 
 ```
-docker pull adamdiehl/cryptography-v04
+$ docker pull adamdiehl/cryptography-v04
+$ docker run -i -t <IMAGE NAME>
 ```
 
 ## Examples
